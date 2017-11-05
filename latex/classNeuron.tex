@@ -1,0 +1,122 @@
+\hypertarget{classNeuron}{\section{Neuron Class Reference}
+\label{classNeuron}\index{Neuron@{Neuron}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNeuron_af1ec9cf091aa834daf3078d02e2ad75a}{Neuron} (bool excitatory)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hyperlink{classNeuron_a94a250ce7e167760e593979b899745b1}{$\sim$\-Neuron} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\hypertarget{classNeuron_a4e216ab0a75e35fcfa6aa17ff067d5dd}{double {\bfseries get\-\_\-mb\-\_\-potential} ()}\label{classNeuron_a4e216ab0a75e35fcfa6aa17ff067d5dd}
+
+\item 
+\hypertarget{classNeuron_a60eceea9f3daf56a3a5e5902ec6369d1}{int {\bfseries get\-\_\-nb\-\_\-spikes} (int n)}\label{classNeuron_a60eceea9f3daf56a3a5e5902ec6369d1}
+
+\item 
+\hypertarget{classNeuron_ae5eaa4d1bc78f7c886a06d5b2904ce7e}{double {\bfseries get\-\_\-\-J} ()}\label{classNeuron_ae5eaa4d1bc78f7c886a06d5b2904ce7e}
+
+\item 
+\hypertarget{classNeuron_a13ffa808d41f88c8dadcf6cbb6ebf009}{bool {\bfseries get\-\_\-state\-\_\-} ()}\label{classNeuron_a13ffa808d41f88c8dadcf6cbb6ebf009}
+
+\item 
+\hypertarget{classNeuron_a661539abd22136fafa8b7ded30182e5a}{bool {\bfseries is\-Excitatory\-\_\-} ()}\label{classNeuron_a661539abd22136fafa8b7ded30182e5a}
+
+\item 
+\hypertarget{classNeuron_a39ed492bf741cd6883bd6b56f6c2f37b}{std\-::vector$<$ double $>$ {\bfseries get\-\_\-time\-\_\-spikes} () const }\label{classNeuron_a39ed492bf741cd6883bd6b56f6c2f37b}
+
+\item 
+void \hyperlink{classNeuron_af699ad2de7679e30fe39c305fc70014c}{update\-\_\-neuron} (unsigned long \&time, double Iext)
+\begin{DoxyCompactList}\small\item\em update neuron \end{DoxyCompactList}\item 
+void \hyperlink{classNeuron_a06e631c8ce59a0155651ae94f75fc573}{recieve} (double \&J, double time)
+\begin{DoxyCompactList}\small\item\em send signal to a post synaptic neurod \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classNeuron_af1ec9cf091aa834daf3078d02e2ad75a}{\index{Neuron@{Neuron}!Neuron@{Neuron}}
+\index{Neuron@{Neuron}!Neuron@{Neuron}}
+\subsubsection[{Neuron}]{\setlength{\rightskip}{0pt plus 5cm}Neuron\-::\-Neuron (
+\begin{DoxyParamCaption}
+\item[{bool}]{excitatory}
+\end{DoxyParamCaption}
+)}}\label{classNeuron_af1ec9cf091aa834daf3078d02e2ad75a}
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bool} & excitatory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+This constructor allows us to define our neuron to an excitatory or inhibitory one. The membrane potential is initialized to 0 as the number of spikes. The neuron doesn't spike. The buffer has a size of 16 and is initialized with all the values at 0 \hypertarget{classNeuron_a94a250ce7e167760e593979b899745b1}{\index{Neuron@{Neuron}!$\sim$\-Neuron@{$\sim$\-Neuron}}
+\index{$\sim$\-Neuron@{$\sim$\-Neuron}!Neuron@{Neuron}}
+\subsubsection[{$\sim$\-Neuron}]{\setlength{\rightskip}{0pt plus 5cm}Neuron\-::$\sim$\-Neuron (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classNeuron_a94a250ce7e167760e593979b899745b1}
+
+
+Destructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classNeuron_a06e631c8ce59a0155651ae94f75fc573}{\index{Neuron@{Neuron}!recieve@{recieve}}
+\index{recieve@{recieve}!Neuron@{Neuron}}
+\subsubsection[{recieve}]{\setlength{\rightskip}{0pt plus 5cm}void Neuron\-::recieve (
+\begin{DoxyParamCaption}
+\item[{double \&}]{J, }
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classNeuron_a06e631c8ce59a0155651ae94f75fc573}
+
+
+send signal to a post synaptic neurod 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double\&} & J double time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+The method changes the values in the buffer after a certain delay with the spike value \hypertarget{classNeuron_af699ad2de7679e30fe39c305fc70014c}{\index{Neuron@{Neuron}!update\-\_\-neuron@{update\-\_\-neuron}}
+\index{update\-\_\-neuron@{update\-\_\-neuron}!Neuron@{Neuron}}
+\subsubsection[{update\-\_\-neuron}]{\setlength{\rightskip}{0pt plus 5cm}void Neuron\-::update\-\_\-neuron (
+\begin{DoxyParamCaption}
+\item[{unsigned long \&}]{time, }
+\item[{double}]{Iext}
+\end{DoxyParamCaption}
+)}}\label{classNeuron_af699ad2de7679e30fe39c305fc70014c}
+
+
+update neuron 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & long\& time double Iext \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+regarding of certain circumstances the method will update the state of the neuron 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Neuron.\-hpp\item 
+Neuron.\-cpp\end{DoxyCompactItemize}

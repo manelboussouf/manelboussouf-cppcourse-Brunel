@@ -1,0 +1,164 @@
+\hypertarget{classNetwork}{\section{Network Class Reference}
+\label{classNetwork}\index{Network@{Network}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNetwork_a4106cc6f9dcb908579ba596ff058c8d6}{Network} (int nb\-\_\-n=12500)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hyperlink{classNetwork_a7a4e19cdb4bf0c7ecf82baa643831492}{$\sim$\-Network} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_a2f752efbb227c6f30d7bf6b598632c2c}{set\-Neurons} ()
+\begin{DoxyCompactList}\small\item\em create the neurons \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_a6de46151e1d41473e68e4c385c3111ac}{set\-Connections} ()
+\begin{DoxyCompactList}\small\item\em set all the connections \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_aa39a2ef43fcd46cbd5e96da6739a6200}{set\-\_\-network\-\_\-time} (unsigned long \&t)
+\begin{DoxyCompactList}\small\item\em set the network\-\_\-time to a certain value. \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_a1bf5deec0f7d831e10d5b59b3fe90026}{store\-\_\-data} ()
+\begin{DoxyCompactList}\small\item\em draw the matrix \end{DoxyCompactList}\item 
+void \hyperlink{classNetwork_a8913d37f6c67caf012fbc9ad970a0386}{update\-\_\-network} (double Iext, unsigned long t\-\_\-start, unsigned long t\-\_\-stop)
+\begin{DoxyCompactList}\small\item\em update the network \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classNetwork_a4106cc6f9dcb908579ba596ff058c8d6}{\index{Network@{Network}!Network@{Network}}
+\index{Network@{Network}!Network@{Network}}
+\subsubsection[{Network}]{\setlength{\rightskip}{0pt plus 5cm}Network\-::\-Network (
+\begin{DoxyParamCaption}
+\item[{int}]{nb\-\_\-n = {\ttfamily 12500}}
+\end{DoxyParamCaption}
+)}}\label{classNetwork_a4106cc6f9dcb908579ba596ff058c8d6}
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & nb\-\_\-n \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none
+\end{DoxyReturn}
+The network time is initialized at 0 The number of neuron is initialized at 125000 The constructor create all the neurons, and set the connections of the network \hypertarget{classNetwork_a7a4e19cdb4bf0c7ecf82baa643831492}{\index{Network@{Network}!$\sim$\-Network@{$\sim$\-Network}}
+\index{$\sim$\-Network@{$\sim$\-Network}!Network@{Network}}
+\subsubsection[{$\sim$\-Network}]{\setlength{\rightskip}{0pt plus 5cm}Network\-::$\sim$\-Network (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classNetwork_a7a4e19cdb4bf0c7ecf82baa643831492}
+
+
+Destructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classNetwork_aa39a2ef43fcd46cbd5e96da6739a6200}{\index{Network@{Network}!set\-\_\-network\-\_\-time@{set\-\_\-network\-\_\-time}}
+\index{set\-\_\-network\-\_\-time@{set\-\_\-network\-\_\-time}!Network@{Network}}
+\subsubsection[{set\-\_\-network\-\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}void Network\-::set\-\_\-network\-\_\-time (
+\begin{DoxyParamCaption}
+\item[{unsigned long \&}]{t}
+\end{DoxyParamCaption}
+)}}\label{classNetwork_aa39a2ef43fcd46cbd5e96da6739a6200}
+
+
+set the network\-\_\-time to a certain value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsigned} & long\& t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classNetwork_a6de46151e1d41473e68e4c385c3111ac}{\index{Network@{Network}!set\-Connections@{set\-Connections}}
+\index{set\-Connections@{set\-Connections}!Network@{Network}}
+\subsubsection[{set\-Connections}]{\setlength{\rightskip}{0pt plus 5cm}void Network\-::set\-Connections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classNetwork_a6de46151e1d41473e68e4c385c3111ac}
+
+
+set all the connections 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Creation of the 2\-D matrix Each neuron create c\-\_\-excitatory connections and c\-\_\-inhibitory connections Note that the neuron to connect is selected randomly \hypertarget{classNetwork_a2f752efbb227c6f30d7bf6b598632c2c}{\index{Network@{Network}!set\-Neurons@{set\-Neurons}}
+\index{set\-Neurons@{set\-Neurons}!Network@{Network}}
+\subsubsection[{set\-Neurons}]{\setlength{\rightskip}{0pt plus 5cm}void Network\-::set\-Neurons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classNetwork_a2f752efbb227c6f30d7bf6b598632c2c}
+
+
+create the neurons 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+create 10.\-000 excitatory neurons and 2500 inhibitory neurons \hypertarget{classNetwork_a1bf5deec0f7d831e10d5b59b3fe90026}{\index{Network@{Network}!store\-\_\-data@{store\-\_\-data}}
+\index{store\-\_\-data@{store\-\_\-data}!Network@{Network}}
+\subsubsection[{store\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}void Network\-::store\-\_\-data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classNetwork_a1bf5deec0f7d831e10d5b59b3fe90026}
+
+
+draw the matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em none} & \\
+\hline
+\end{DoxyParams}
+Write in a file wich neuron is connected to a selected one. \hypertarget{classNetwork_a8913d37f6c67caf012fbc9ad970a0386}{\index{Network@{Network}!update\-\_\-network@{update\-\_\-network}}
+\index{update\-\_\-network@{update\-\_\-network}!Network@{Network}}
+\subsubsection[{update\-\_\-network}]{\setlength{\rightskip}{0pt plus 5cm}void Network\-::update\-\_\-network (
+\begin{DoxyParamCaption}
+\item[{double}]{Iext, }
+\item[{unsigned long}]{t\-\_\-start, }
+\item[{unsigned long}]{t\-\_\-stop}
+\end{DoxyParamCaption}
+)}}\label{classNetwork_a8913d37f6c67caf012fbc9ad970a0386}
+
+
+update the network 
+
+
+\begin{DoxyParams}{Parameters}
+{\em double} & Iext unsigned long t\-\_\-start unsigned long t\-\_\-stop \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+First, update each neuron then if the neuron is Excitatory send J if the neuron is Inhibitory send Ji store the data in a file 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Network.\-hpp\item 
+Network.\-cpp\end{DoxyCompactItemize}
