@@ -1,0 +1,2 @@
+/home/INTRANET/boussouf/myfiles/NeuronProject/build/CMakeFiles/Neuron.dir
+/home/INTRANET/boussouf/myfiles/NeuronProject/build/CMakeFiles/doc.dir
